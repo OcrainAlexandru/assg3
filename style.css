@@ -1,22 +1,22 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Comic Sans MS', cursive;
     margin: 20px;
     padding: 0;
-    background-color: #e6eaf1;
-    color: #2c3e50;
+    background-color: #ffecb3; /* Light yellow background */
+    color: #8e44ad; /* Dark purple text */
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
-    color: #3498db;
+    color: #e74c3c; /* Red header */
 }
 
 section {
     margin-bottom: 40px;
 }
 
-iframe,
+.crazy-iframe,
 .styled-div {
     width: 100%;
     max-width: 800px;
@@ -26,40 +26,39 @@ iframe,
 
 .styled-div {
     height: 200px;
-    background-color: #f39c12;
+    background-color: #3498db; /* Blue background */
     padding: 20px;
     box-sizing: border-box;
-    border: 2px solid #d35400;
-    border-radius: 12px;
+    border: 5px dotted #27ae60; /* Green dotted border */
+    border-radius: 20px; /* Rounded corners */
 }
 
 .highlighted-text {
-    color: #e74c3c;
+    color: #e67e22; /* Orange highlighted text */
     font-weight: bold;
 }
 
 hr {
     margin: 40px 0;
-    border: 0;
-    border-top: 2px solid #bdc3c7;
+    border: 2px dashed #f39c12; /* Orange dashed line */
 }
 
 /* Combinator styles */
 
 /* Descendant Selector */
 .nav-bar ul li a {
-    color: #3498db;
+    color: #e74c3c; /* Red navigation links */
     text-decoration: none;
 }
 
 /* Child Selector */
 .content > h2 {
-    color: #27ae60;
+    color: #27ae60; /* Green content h2 */
 }
 
 /* Adjacent Sibling Selector */
 .content + section > h2 {
-    color: #e74c3c;
+    color: #e74c3c; /* Red adjacent h2 */
 }
 
 /* Pseudo-classes */
@@ -72,35 +71,35 @@ hr {
 }
 
 .styled-div:hover {
-    background-color: #f7ca18;
+    background-color: #f39c12; /* Orange background on hover */
 }
 
 /* Target the second section */
 .content:nth-child(2) {
-    background-color: #ecf0f1;
+    background-color: #ecf0f1; /* Light blue background */
 }
 
 /* Pseudo-elements */
 .content::before {
-    content: ">>";
-    color: #3498db;
-    font-weight: bold;
+    content: "🚀"; /* Rocket before content */
+    color: #3498db; /* Blue rocket color */
+    font-size: 24px;
     margin-right: 5px;
 }
 
 .content::after {
-    content: "<<";
-    color: #3498db;
-    font-weight: bold;
+    content: "🌟"; /* Star after content */
+    color: #f39c12; /* Orange star color */
+    font-size: 24px;
     margin-left: 5px;
 }
 
 .styled-div p::first-line {
     font-size: 18px;
-    color: #e74c3c;
+    color: #e74c3c; /* Red first line text */
 }
 
 .content p::first-letter {
     font-size: 24px;
-    color: #27ae60;
+    color: #27ae60; /* Green first letter text */
 }
